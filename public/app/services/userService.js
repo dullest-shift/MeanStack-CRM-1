@@ -5,6 +5,7 @@ angular.module('userService', [])
 	// create a new object
 	var userFactory = {};
 
+
 	// get a single user
 	userFactory.get = function(id) {
 		return $http.get('/collections/users/' + id);
@@ -29,8 +30,10 @@ angular.module('userService', [])
 	userFactory.delete = function(id) {
 		return $http.delete('/collections/users/' + id);
 	};
-
+	
 	// return our entire userFactory object
 	return userFactory;
+	
+
 
 });
