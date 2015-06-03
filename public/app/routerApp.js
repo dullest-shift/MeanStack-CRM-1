@@ -1,31 +1,30 @@
 (function() { 
 'use strict';
-angular.module('app.routes', ['ngRoute'])
+	var routerApp = angular.module('routerApp', ['ui.router']);
 
-.config(function($routeProvider, $locationProvider) {
+	routerApp.config(function($stateProvider, $urlRouterProvider) {
 
-	$routeProvider
+		$urlRouterProvider.otherwise('/home');
+
+		$stateProvider
 
 		// route for the home page
-		.when('/', {
-			templateUrl : 'app/views/pages/home.html'
+		.state('home', {
+			url : '/home',
+				templateUrl: 'app/views/pages/home.html'
 		})
 		
 		// login page
-		.when('/login', {
+		.state('login', {
+				url: '/login',
 			templateUrl : 'app/views/pages/login.html',
    			controller  : 'mainController',
     			controllerAs: 'login'
-		})
+		});
 		
-		// show all users
-		.when('/users', {
-			templateUrl: 'app/views/pages/users/users.html',
-			controller: 'userController',
-			controllerAs: 'user'
-		})
-		//create a new user login 
-		.when('/create', {
+
+		/*//create a new user login
+		.state('/create', {
 			templateUrl: 'app/views/pages/create.html',
 			controller: 'userController',
 			controllerAs: 'user'
@@ -45,9 +44,9 @@ angular.module('app.routes', ['ngRoute'])
 			controller: 'userEditController',
 			controllerAs: 'user'
 		});
+*/
 
 
-	$locationProvider.html5Mode(true);
 
 });
 }());

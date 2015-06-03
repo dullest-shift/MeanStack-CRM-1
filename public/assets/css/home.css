@@ -1,0 +1,115 @@
+* { Box-sizing: Border-box }
+
+body {
+    margin: 0;
+    background: #000;
+}
+a {
+
+    color: #fff;
+    text-decoration: none;
+    padding: .5rem;
+    transition: .6s background;
+}
+a:hover{
+    background:rgba(0,0,0,0.9);
+}
+.home-container {
+    display: flex;
+    flex-direction: column;
+}
+.home-container-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+    opacity: .6;
+}
+
+#polina {
+    display: flex;
+    justify-content: space-around;
+    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    font-weight:100;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    padding: 2rem;
+    width: 100%;
+    font-size: 1.2rem;
+}
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: .3rem;
+}
+.home-nav-links {
+    text-align: center;
+    width: 16%;
+    padding: .8rem;
+    border: none;
+    margin: 1rem auto;
+    font-size: 1.3rem;
+    background: rgba(255,255,255,0.23);
+    color: #fff;
+    cursor: pointer;
+    transition: .3s background;
+}
+.home-nav-links:hover {
+    background: #7AB800;
+}
+
+
+
+.live-feed-container {
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+    overflow: hidden;
+}
+.live-feed-inner-container {
+    width:40%;
+    font-size: 1.3rem;
+    color: #fff;
+    padding-top: 1em;
+    text-align: center;
+    margin-top: 2em;
+    background: rgba(0,0,0,0.3);
+
+}
+.image-carousel-container {
+    width: 100%;
+    position: relative;
+    bottom: -2%;
+    display: flex;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+.home-intro-title {
+    height: 30vh;
+}
+.home-intro-title h2 {
+    font-family: 'Dosis', 'Lato', sans-serif;
+    font-size: 60px;
+    font-weight: 200;
+    color: #fff;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 0;
+    letter-spacing: 14px;
+    text-align: center;
+}
