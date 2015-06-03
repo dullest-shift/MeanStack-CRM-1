@@ -4,15 +4,44 @@
 
 	routerApp.config(function($stateProvider, $urlRouterProvider) {
 
-		$urlRouterProvider.otherwise('/home');
+		$urlRouterProvider.otherwise('/landing');
 
 		$stateProvider
 
 		// route for the home page
-		.state('home', {
+			.state('landing', {
+				url : '/landing',
+				templateUrl: 'app/views/pages/landing.html'
+			})
+			.state('home', {
 			url : '/home',
-				templateUrl: 'app/views/pages/home.html'
+				templateUrl: 'app/views/pages/home.html',css: '../../assets/css/home.css'
 		})
+			.state('home.portfolio', {
+				url : '/portfolio',
+				templateUrl: 'app/views/pages/portfolio.html',css: '../../assets/css/home.css'
+			})
+			.state('about', {
+				url : '/about',
+				templateUrl: 'app/views/pages/about.html',css: '../../assets/css/home.css'
+			})
+			.state('blog', {
+				url : '/blog',
+				templateUrl: 'app/views/pages/blog.html',css: '../../assets/css/home.css'
+			})
+			.state('chat', {
+				url : '/chat',
+				templateUrl: 'app/views/pages/chat.html',css: '../../assets/css/home.css'
+			})
+			.state('contact', {
+				url : '/contact',
+				templateUrl: 'app/views/pages/contact.html',css: '../../assets/css/home.css'
+			})
+
+			.state('social', {
+				url : '/social',
+				templateUrl: 'app/views/pages/social.html',css: '../../assets/css/home.css'
+			})
 		
 		// login page
 		.state('login', {

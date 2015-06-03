@@ -101,6 +101,10 @@ h1 {
 }
 .home-intro-title {
     height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 .home-intro-title h2 {
     font-family: 'Dosis', 'Lato', sans-serif;
@@ -110,6 +114,32 @@ h1 {
     width: 100%;
     text-transform: uppercase;
     padding: 0;
-    letter-spacing: 14px;
+    letter-spacing: 6px;
     text-align: center;
+}
+.portfolio-link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    font-weight:100;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    padding: 2rem;
+    width: 100%;
+}
+.portfolio-nav-links {
+    text-align: center;
+    width: 16%;
+    padding: .8rem;
+    border: none;
+    margin: 1rem auto;
+    font-size: 1.3rem;
+    background: rgba(255,255,255,0.23);
+    color: #fff;
+    cursor: pointer;
+    transition: .3s background;
+}
+.portfolio-nav-links :hover {
+    background: #7AB800;
 }
