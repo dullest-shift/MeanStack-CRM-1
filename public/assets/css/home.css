@@ -122,10 +122,13 @@ h1 {
     flex-direction: row;
     justify-content: space-around;
     font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
-    font-weight:100;
-    background: rgba(0,0,0,0.3);
+    font-weight: 100;
+    /* background: rgba(0,0,0,0.3); */
     color: white;
     padding: 2rem;
+    width: 100%;
+    height: 30vh;
+    margin-top: 10%
     width: 100%;
 }
 .portfolio-nav-links {
@@ -139,7 +142,52 @@ h1 {
     color: #fff;
     cursor: pointer;
     transition: .3s background;
+    height: 160px;
 }
 .portfolio-nav-links :hover {
     background: #7AB800;
+}
+.activeState {
+    background: #7AB800;
+}
+.react-img {
+    background: url('http://sc5.io/blog/wp-content/uploads/2014/06/react.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.angular-img {
+    background: url('http://www.ifmine.com/file/1711');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.node-img {
+    background: url('../../assets/css/img/nodejs.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.mean-img {
+    background: url('http://meanjs.org/img/icon.png ');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.html5-img {
+    background: url('http://www.w3.org/html/logo/downloads/HTML5_Badge_256.png ');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 140px;
+    margin-top: 35px;
+}
+.css3-img {
+
+background: url('http://www.niou.net/img/parallax-slider/css3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
