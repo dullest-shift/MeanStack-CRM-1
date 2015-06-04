@@ -11,7 +11,7 @@
 		// route for the home page
 			.state('landing', {
 				url : '/landing',
-				templateUrl: 'app/views/pages/landing.html'
+				templateUrl: 'app/views/pages/landing.html',css: '../../assets/css/landing.css'
 			})
 			.state('home', {
 			url : '/home',
