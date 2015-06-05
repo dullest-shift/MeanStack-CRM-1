@@ -21,7 +21,7 @@
 				url : '/portfolio',
 				templateUrl: 'app/views/pages/portfolio.html',css: '../../assets/css/home.css'
 			})
-			.state('about', {
+			.state('home.about', {
 				url : '/about',
 				templateUrl: 'app/views/pages/about.html',css: '../../assets/css/home.css'
 			})
