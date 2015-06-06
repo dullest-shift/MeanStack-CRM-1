@@ -38,9 +38,9 @@
 				templateUrl: 'app/views/pages/contact.html',css: '../../assets/css/home.css'
 			})
 
-			.state('social', {
+			.state('home.social', {
 				url : '/social',
-				templateUrl: 'app/views/pages/social.html',css: '../../assets/css/home.css'
+				templateUrl: 'app/views/pages/social.html',css: '../../assets/css/social.css'
 			})
 		
 		// login page
