@@ -1,10 +1,7 @@
 'use strict';
-angular.module('userApp', ['ngAnimate', 'routerApp','door3.css', 'postService','authService', 'mainCtrl','postCtrl', 'userCtrl', 'userService'])
+angular.module('userApp', ['ngResource','ngAnimate', 'routerApp','door3.css','socialCtrl', 'userCtrl', 'userService','dribbleService']);
 
-// application configuration to integrate token into requests
-.config(function($httpProvider) {
 
-	// attach our auth interceptor to the http requests
-	$httpProvider.interceptors.push('AuthInterceptor');
 
-});
+
+

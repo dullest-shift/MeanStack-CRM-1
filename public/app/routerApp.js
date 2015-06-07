@@ -40,16 +40,18 @@
 
 			.state('home.social', {
 				url : '/social',
-				templateUrl: 'app/views/pages/social.html',css: '../../assets/css/social.css'
+				templateUrl: 'app/views/pages/social.html',css: '../../assets/css/home.css',
+				controller  : 'socialController',
+				controllerAs: 'social'
 			})
+			.state('home.ui-ux', {
+				url : '/ui-ux',
+				templateUrl: 'app/views/pages/ui-ux.html',css: '../../assets/css/home.css',
+				controller  : 'socialController',
+				controllerAs: 'social'
+			});
 		
-		// login page
-		.state('login', {
-				url: '/login',
-			templateUrl : 'app/views/pages/login.html',
-   			controller  : 'mainController',
-    			controllerAs: 'login'
-		});
+
 		
 
 		/*//create a new user login

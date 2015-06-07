@@ -1,231 +1,163 @@
-
-
-/* Toolbar area */
-
-.menuBtn {
-  background-color: transparent;
-  border: none;
-  height: 38px;
-  margin: 16px;
-  width: 36px;
+body {
+  background: url('http://subtlepatterns.com/patterns/grey_wash_wall.png');
 }
-
-md-toolbar h1 {
-  margin: auto;
+.main-wrapper {
+  margin-bottom: 50px;
 }
-
-/* Sidenav area */
-.md-sidenav-left {
-  background: #2B2F3E;
-}
-.md-theme-profile {
-  height:150px;
-  width: 100%;
-  overflow: hidden;
-  z-index:20;
-}
-.md-profile-header-label {
+h1.page-header {
   color: white;
-  font-size: 26px;
-  float: right;
-  margin: 40px 30px 0px 0px;
 }
-.myButton{
-  background: grey;
+.thumbnail {
+  margin-bottom: 10px;
+  border-radius: 0;
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+.thumbnail .thumbnail-img-wrapper {
+  position: relative;
+  z-index: 10;
+}
 
+.thumbnail .thumbnail-img {
+  min-height: 250px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  cursor: pointer;
 }
-.circular {
-  width: 100px;
-  height: 100px;
-  margin: 40px 0px 0px 100px;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  background-image: url(img/Callis,Ben.gif);
-  }
-.md-button1 {
-  background-size: 95px;
-} 
-.md-primary.md-button2 {
-  background-image: url(img/icons/person_add.png) ;
-  background-size: 65px;
-} 
-.md-button4 {
-  background-image: url(img/icons/notifications.png) ;
-  background-size: 65px;
-} 
- .md-button {
-  color: inherit;
-  font-weight: 500;
-  text-align: left;
-  width: 80%;
+.thumbnail .author-info {
+  display: table-row;
 }
-  md-list .md-button.selected {
-    color: #03a9f4;
-  }
 
-.avatar {
-  border: 1px solid #ddd;
-  display: inline-block;
-  margin: 0px;
+.thumbnail .author-info .avatar{
+  display: table-cell;
+  margin-bottom: 9px;
+  vertical-align: middle;
+  width: 70px;
+}
+.thumbnail h4 {
+  display: table-cell;
+  padding: 9px;
   vertical-align: middle;
 }
-
-/* Primary content area */
-
-.profile-content-header{
- 
-}
-.md-content-header-flex{
-  height: 50px;
-  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
-   width: 33%;
-   background: white;
-}
-.main-content-area{
-color: black;
-}
-#content {
-  overflow: hidden;
-}
-  #content md-content {
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 5px;
-  }
-    #content .md-button.action {
-      background-color: transparent;
-      border: none;
-      height: 38px;
-      margin: 8px auto 16px 0;
-      position: absolute;
-      top: 10px;
-      right: 25px;
-      width: 36px;
-    }
-
-    #content img {
-      display: block;
-      height: auto;
-      max-width: 500px;
-    }
-
-/* Utils */
-
-.content-wrapper {
-  position: relative;
+.thumbnail .info-box {
   width: 100%;
-}
-
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
+  background: rgb(0, 0, 0); /* The Fallback */
+  background: rgba(0,0,0,0.7);
+  color: white;
   position: absolute;
-  width: 1px;
+  bottom: 0;
+}
+.thumbnail .info-box > p{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 9px;
+  margin: 0;
+}
+.thumbnail .dribble-url {
+  position: absolute;
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  margin-top: -40px;
+  margin-left: -25px;
+  -webkit-animation: fadeIn 0.7s;
+  -moz-animation: fadeIn 0.7s;
+  -ms-animation: fadeIn 0.7s;
+  animation: fadeIn 0.7s;
+  color: #2D2D2D;
 }
 
-/* Typography support coming in 0.8.0 */
-
-md-toolbar h1 {
-  font-size: 1.250em;
-  font-weight: 400;
+.thumbnail .dribble-url.ng-hide {
+  -webkit-animation: fadeOut 0.7s;
+  -moz-animation: fadeOut 0.7s;
+  -ms-animation: fadeOut 0.7s;
+  animation: fadeOut 0.7s;
 }
 
-/* Using Data-URI converted from svg until <md-icon> becomes available
-https://github.com/google/material-design-icons
-*/
-.menuBtn {
-  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGcgaWQ9IkhlYWRlciI+CiAgICA8Zz4KICAgICAgICA8cmVjdCB4PSItNjE4IiB5PSItMjIzMiIgZmlsbD0ibm9uZSIgd2lkdGg9IjE0MDAiIGhlaWdodD0iMzYwMCIvPgogICAgPC9nPgo8L2c+CjxnIGlkPSJMYWJlbCI+CjwvZz4KPGcgaWQ9Ikljb24iPgogICAgPGc+CiAgICAgICAgPHJlY3QgZmlsbD0ibm9uZSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ii8+CiAgICAgICAgPHBhdGggZD0iTTMsMThoMTh2LTJIM1YxOHogTTMsMTNoMTh2LTJIM1YxM3ogTTMsNnYyaDE4VjZIM3oiIHN0eWxlPSJmaWxsOiNmM2YzZjM7Ii8+CiAgICA8L2c+CjwvZz4KPGcgaWQ9IkdyaWQiIGRpc3BsYXk9Im5vbmUiPgogICAgPGcgZGlzcGxheT0iaW5saW5lIj4KICAgIDwvZz4KPC9nPgo8L3N2Zz4=) no-repeat  center center;
+.thumbnail .dribble-url .glyphicon {
+  background: rgb(240,240,240);
+  background: rgba(240,240,240, 0.8);
+  border: 1x solid grey;
+  padding:10px;
+  display: inline-block;
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  -moz-box-shadow: 0px 0px 2px #888;
+  -webkit-box-shadow: 0px 0px 2px #888;
+  box-shadow: 0px 0px 2px #888;
+}
+.thumbnail .dribble-url .glyphicon:hover {
+  background: rgb(255,255,255);
+  background: rgba(255,255,255, 0.8);
 }
 
-.actionBtn {
-  background: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiIgdmlld0JveD0iMCAwIDM2IDM2Ij4NCiAgICA8cGF0aCBkPSJNMCAwaDM2djM2aC0zNnoiIGZpbGw9Im5vbmUiLz4NCiAgICA8cGF0aCBkPSJNNCAyN2gyOHYtM2gtMjh2M3ptMC04aDI4di0zaC0yOHYzem0wLTExdjNoMjh2LTNoLTI4eiIvPg0KPC9zdmc+) no-repeat  center center;
-}
-/*PROFILE SECTION///PROFILE SECTION///PROFILE SECTION///*/
-.md-profile-header {
-  width: 900px;
-  background: grey;
-}
-.profile-container{
- 
- width: 100%;
-  height:100vh;
-}
-.profile-flex {
-  background: grey;
-  height: 100px;
-  width: 33%;
-  margin: 10px;
+.thumbnail .caption {
+  -webkit-animation: fadeInDown 0.7s;
+  -moz-animation: fadeInDown 0.7s;
+  -ms-animation: fadeInDown 0.7s;
+  animation: fadeInDown 0.7s;
+  background: #fff;
 }
 
-/*Landing Content////Landing Content////Landing Content////*/
-.landing-content {
-  display: flex;
-  background: grey;
+.thumbnail .caption.ng-hide {
+  -webkit-animation: fadeOutUp 0.7s;
+  -moz-animation: fadeOutUp 0.7s;
+  -ms-animation: fadeOutUp 0.7s;
+  animation: fadeOutUp 0.7s;
+}
+
+.fixed-footer {
+  position: fixed;
+  z-index: 11;
+  bottom: 0;
   width: 100%;
-  height: 100vh;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 8px 8px 8px #696868;
 }
-.login-box-landing{
-  height: 400px;
-  margin-top: 60px;
-  background: white;
- box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26); }
+
+.fixed-footer .pagination {
+  margin: 10px 0 5px;
 }
-.login-button {
-  height: 200px;
+
+.deckgrid[deckgrid]::before {
+  content: '3 .column.column-1-3';
+  font-size: 0;
+  visibility: hidden;
 }
-.signIn-container{
-  width: 100%;
-  height: 100px;
-  margin-top: 60px;
-}
-.calendar-buttons{
-  width:100%;
-}
-.app-content-body {
+
+.deckgrid .column {
   float: left;
-  width: 100%;
-  padding-bottom: 50px;
+  padding: 5px;
 }
-.tabsdemoDynamicTabs .sample {
-  height: 500px; }
-.tabsdemoDynamicTabs .remove-tab {
-  margin-bottom: 40px; }
-.tabsdemoDynamicTabs .demo-tab {
-  height: 300px;
-  text-align: center; }
-.tabsdemoDynamicTabs .demo-tab button {
-  margin-bottom: 40px; }
-.tabsdemoDynamicTabs md-tabs, .tabsdemoDynamicTabs md-tabs .md-header {
-  border-bottom: 1px solid #D8D8D8; }
-.tabsdemoDynamicTabs md-tab[disabled] {
-  opacity: 0.5; }
-.tabsdemoDynamicTabs .md-tab-content {
-  background: white; }
-.tabsdemoDynamicTabs .title {
-  padding-top: 8px;
-  padding-right: 8px;
-  text-align: left;
-  text-transform: uppercase;
-  color: #888;
-  margin-top: 24px; }
-.tabsdemoDynamicTabs [layout-align] > * {
-  margin-left: 8px; }
-.tabsdemoDynamicTabs form > [layout] > * {
-  margin-left: 8px; }
-.tabsdemoDynamicTabs form > [layout] > span {
-  padding-top: 2px; }
-.tabsdemoDynamicTabs .long > input {
-  width: 264px; }
-.tabsdemoDynamicTabs .md-button.add-tab {
-  margin-top: 20px;
-  max-height: 30px !important; }
-  .toolbardemoScrollShrink .face {
-  width: 48px;
-  margin: 16px;
-  border-radius: 48px;
-  border: 1px solid #ddd; }
+
+.deckgrid .column-1-3 {
+  width: 33.33333333333%;
+}
+
+@media screen and (max-width: 992px) {
+  .deckgrid[deckgrid]::before {
+    content: '2 .column.column-1-2';
+  }
+
+  .deckgrid .column-1-2 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .deckgrid[deckgrid]::before {
+    content: '1 .column.column-1-1';
+  }
+
+  .deckgrid .column-1-1 {
+    width: 100%;
+  }
+}
+
+

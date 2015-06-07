@@ -1,15 +1,3 @@
-
-
-
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css"/>
-
-
-    <!-- JAVASCRIPT JAVASCRIPT JAVASCRIPT -->
-    <script src="js/snap.svg-min.js"></script>
-    <!--[if IE]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
 <div class="social-main-container">
     <div class="home-container">
         <div class="home-container-inner">
@@ -26,24 +14,27 @@
 
                 </div>
             </div>
-            <div class="image-carousel-container">
-                <div id="owl-demo" class="owl-carousel">
-                    <div class="item"><img src="" alt="Owl Image"></div>
-                    <div class="item"><img src="" alt="Owl Image"></div>
-                    <div class="item"><img src="" alt="Owl Image"></div>
-                    <div class="item"><img src="" alt="Owl Image"></div>
-                    <div class="item"><img src="" alt="Owl Image"></div>
-                    <div class="item"><img src="" alt="Owl Image"></div>
-                    <div class="item"><img src="" alt="Owl Image"></div>
-                    <div class="item"><img src="" alt="Owl Image"></div>
-                </div>
-            </div>
+            <slick  init-onload=true data="awesomeThings" class="slider multiple-items">
+                <div class="my-image-slider">{{card.image_url}}</div>
+                <div class="my-image-slider"></div>
+                <div class="my-image-slider"></div>
+                <div class="my-image-slider"></div>
+                <div class="my-image-slider"></div>
+                <div class="my-image-slider"></div>
+                <div class="my-image-slider"></div>
+                <div class="my-image-slider"></div>
+                <div class="my-image-slider"></div>
+            </slick>
+
 
         </div>
         <!-- /container -->
-        <script src="js/jquery-1.9.1.min.js"></script>
-        <script src="js/owl.carousel.js"></script>
+        <script>
+        $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+            autoplay:true
+        });
+        </script>
 
-
-        <script src="js/classie.js"></script>
-        <script src="js/main3.js"></script>
