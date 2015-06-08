@@ -1,0 +1,36 @@
+<div class="UIUX-main-container">
+    <slick  init-onload=true data="awesomeThings" class="slider multiple-items">
+        <div class="UXUI-image-slider">{{card.image_url}}</div>
+        <div class="UXUI-image-slider">2</div>
+        <div class="UXUI-image-slider">3</div>
+        <div class="UXUI-image-slider">4</div>
+        <div class="UXUI-image-slider">5</div>
+        <div class="UXUI-image-slider">6</div>
+        <div class="UXUI-image-slider">7</div>
+        <div class="UXUI-image-slider">8</div>
+        <div class="UXUI-image-slider">9</div>
+    </slick>
+
+
+</div>
+<div class="slider-arrows">
+    <a class="slider-arrow slider-arrow--right  " data-distance="1"></a>
+    <a class="slider-arrow slider-arrow--left  " data-distance="-1"></a>
+</div>
+
+
+
+
+
+
+<!-- /container -->
+<script>
+    $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay:true,
+        prevArrow:'.slider-arrow--left',
+        nextArrow:'.slider-arrow--right'
+    });
+</script>

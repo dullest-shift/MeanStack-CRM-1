@@ -551,3 +551,65 @@ h1 {
     opacity: .75;
     color: black;
 }
+
+/*UIUX UIUX UIUX UIUX UIUX UIUX UIUX*/
+.UIUX-main-container {
+    display: flex;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70vh;
+    z-index: 0;
+    position: relative;
+
+
+}
+
+.UXUI-image-slider {
+    display: flex;
+    justify-content: center;
+    background: grey;
+    color:white;
+    width: 50%;
+    height: 70vh;
+    background-size: cover;
+    z-index: 0;
+    position: relative;
+
+}
+.page_05 {
+    display: flex;
+    width:100%;
+}
+
+
+.slider-arrow{position:absolute;display:block;margin-bottom:-20px;z-index:10;padding:20px}
+.slider-arrow--right{background:url("http://leodrapeau.com/assets/svg/arrow_to_right.svg") no-repeat;opacity:0.4;width:42px;height:42px;background-position:center center;background-color:rgba(0,0,0,0);border-radius:1000px;top:40%;right:60px;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
+.slider-arrow--left{background:url("http://leodrapeau.com/assets/svg/arrow_to_left.svg") no-repeat;opacity:0.4;width:42px;height:42px;background-position:center center;background-color:rgba(0,0,0,0);border-radius:1000px;top:40%;left:60px;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
+.slider-nav{position:absolute;bottom:30px;background-color:none;z-index:0;opacity:1;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
+.slider-arrow--right:hover,.slider-arrow--left:hover{opacity:1;background-color:rgba(0,0,0,0.2)}
+
+.slide {
+    display: flex;
+    justify-content: center;
+ 
+    margin-left: auto;
+    margin-right: auto;
+    height:65vh;
+    background: green;
+    color: #000;
+}
+.slide header {
+    height:40px;
+    background-color: #fff;
+    width:100%;
+    text-align: center;
+    color:#00aced;
+    font-size: 35px;
+}
+.page_05_slide_01 {
+    width: 100%;
+    background: url("http://infiniterewrite.com/wp-content/uploads/2013/05/01_nm_UX_Master-Wireframe_Final.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
