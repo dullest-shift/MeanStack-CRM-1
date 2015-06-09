@@ -555,10 +555,11 @@ h1 {
 /*UIUX UIUX UIUX UIUX UIUX UIUX UIUX*/
 .UIUX-main-container {
     display: flex;
+    flex-direction: column;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    height: 70vh;
+    height: 60vh;
     z-index: 0;
     position: relative;
 
@@ -568,7 +569,8 @@ h1 {
 .UXUI-image-slider {
     display: flex;
     justify-content: center;
-    background: grey;
+    text-align: center;
+    font-size: 35px;
     color:white;
     width: 50%;
     height: 70vh;
@@ -592,10 +594,10 @@ h1 {
 .slide {
     display: flex;
     justify-content: center;
- 
+
     margin-left: auto;
     margin-right: auto;
-    height:65vh;
+    height:55vh;
     background: green;
     color: #000;
 }
@@ -612,4 +614,55 @@ h1 {
     background: url("http://infiniterewrite.com/wp-content/uploads/2013/05/01_nm_UX_Master-Wireframe_Final.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+.browser_top{
+background:lightgray;
+display: flex;
+width: 100%;
+height: 50px;
+position: relative;
+
+z-index: 3;
+-webkit-border-top-left-radius: 4px;
+-webkit-border-top-right-radius: 4px;
+-moz-border-radius-topleft: 4px;
+-moz-border-radius-topright: 4px;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+margin: auto;
+}
+p.browser_title{font-family:'Open Sans', Helvetica, Arial, sans-serif;color:#fff;font-size:12px;font-weight:300;text-align:center;padding-top:11px;margin:auto}
+.browser_top_red{width:10px;height:10px;background-color:#f67070;position:absolute;border-radius:100px;top:15px;left:14px}
+.browser_top_yellow{width:10px;height:10px;background-color:#ede178;position:absolute;border-radius:100px;top:15px;left:31px}
+.browser_top_green{width:10px;height:10px;background-color:#b7e67d;position:absolute;border-radius:100px;top:15px;left:48px}
+.browser_link{font-family:'Open Sans', Helvetica, Arial, sans-serif;color:#fff;font-size:11px;font-weight:400;text-align:center;position:absolute;right:8px;top:7px;text-decoration:none;border:1px solid rgba(255,255,255,0.2);border-radius:2px;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;background-color:rgba(215,164,98,0);padding:4px 18px 5px}
+
+.uiux1 {
+    background:
+    linear-gradient(
+            rgba(255,255,255,0.6),
+            rgba(255,255,255,0.6)
+    ), url('http://wallpapers111.com/wp-content/uploads/2015/01/Question-Mark-HD-Wallpaper16.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000;
+    text-align: center;
+    font-size: 35px;
+
+}
+. uiux1 h2 {
+
+
+}
+.uiux2 {
+    background:
+    linear-gradient(
+            rgba(47, 200, 170,0.45),
+            rgba(47, 200, 170,0.45)
+    ), url('http://www.spring.org.uk/images/goals.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 35px;
+
 }

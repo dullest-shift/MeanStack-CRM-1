@@ -1,14 +1,33 @@
 {
   "name": "GoodDeeds",
   "main": "server.js",
+  "scripts": {
+    "watch": "watchify app.js -o public/js/bundle.js -v",
+    "browserify": "browserify app.js | uglifyjs > public/js/bundle.js",
+    "build": "npm run browserify ",
+    "start": "npm install"
+  },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "~1.9.3",
     "dribbble-api": "0.0.3",
     "express": "~4.10.3",
+    "express-handlebars": "~1.1.0",
     "jsonwebtoken": "^1.2.0",
     "mongoose": "~3.8.19",
-    "morgan": "~1.5.0"
+    "morgan": "~1.5.0",
+    "ng-twitter": "0.0.4",
+    "node-jsx": "~0.11.0",
+    "react": "~0.11.2",
+    "socket.io": "^1.1.0",
+    "twitter": "^1.2.0"
+  },
+  "devDependencies": {
+    "browserify": "~6.0.3",
+    "nodemon": "^1.2.1",
+    "reactify": "~0.14.0",
+    "uglify-js": "~2.4.15",
+    "watchify": "^3.1.1"
   },
   "author": "Ben Callis",
   "license": "MIT"

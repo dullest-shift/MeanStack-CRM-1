@@ -13,7 +13,8 @@ console.log('Status');
     $scope.currentPage = $location.search().page || 1;
     $scope.itemsPerPage = 15;
     $scope.totalItems = 750;
-
+    $scope.authKey = 'bzJZSlN4ZnJUYWhyeXdub2R4MzJBOkFHSmw5MnJIeEFTRkpYVW9BSm8zMEpTQzU2Wm0zNFZxZmFVZFh1TUZWamc=';
+    $scope.hashtag = 'football';
 
 
 
