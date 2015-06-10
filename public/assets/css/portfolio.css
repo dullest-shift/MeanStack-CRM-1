@@ -44,7 +44,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 75%;
     height:100%;
 
 
@@ -53,7 +53,7 @@ body {
 }
 
 .portfolio-container-right {
-    width: 40%;
+    width: 25%;
     height:100%;
     background: url("http://www.helloimcody.com/images/sidebarlines-bg.png") left top no-repeat #202020;
     background-size: cover;
@@ -483,16 +483,18 @@ h1 h2 p {
 }
 
 .grid-wrap {
-    margin: 10px auto 0;
-    max-width: 1090px;
+    height: 100vh;
     width: 100%;
-    padding: 0;
     -webkit-perspective: 1500px;
     perspective: 1500px;
 }
 
 .grid {
-    position: relative;
+
+    scrollbar:none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     -webkit-transition: all 0.5s cubic-bezier(0,0,0.25,1);
     transition: all 0.5s cubic-bezier(0,0,0.25,1);
     -webkit-transform-style: preserve-3d;
@@ -506,13 +508,13 @@ h1 h2 p {
 
 .grid figure,
 .grid .placeholder {
-    width: 340px;
-    height: 300px;
+    width: 25%;
 }
 
 .grid figure {
     margin: 10px;
-    display: inline-block;
+    display: flex;
+    width: 25%;
     cursor: pointer;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
