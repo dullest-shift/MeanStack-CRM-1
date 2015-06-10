@@ -1,0 +1,787 @@
+@font-face {
+    font-family: 'fontawesome';
+    src:url('../fonts/fontawesome/fontawesome.eot?-v92fkb');
+    src:url('../fonts/fontawesome/fontawesome.eot?#iefix-v92fkb') format('embedded-opentype'),
+    url('../fonts/fontawesome/fontawesome.woff?-v92fkb') format('woff'),
+    url('../fonts/fontawesome/fontawesome.ttf?-v92fkb') format('truetype'),
+    url('../fonts/fontawesome/fontawesome.svg?-v92fkb#fontawesome') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blokk';
+    src: url('../fonts/blokk/BLOKKRegular.eot');
+    src: url('../fonts/blokk/BLOKKRegular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/blokk/BLOKKRegular.woff') format('woff'),
+    url('../fonts/blokk/BLOKKRegular.svg#BLOKKRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    position: relative;
+}
+.portfolio-main-container {
+    display: flex;
+    height:100vh;
+    background: lightgray;
+
+}
+
+.portfolio-left-BG {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("http://www.helloimcody.com/images/spacemanshit.jpg") center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+
+    height:100%;
+}
+.portfolio-container-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height:100%;
+
+
+
+
+}
+
+.portfolio-container-right {
+    width: 40%;
+    height:100%;
+    background: url("http://www.helloimcody.com/images/sidebarlines-bg.png") left top no-repeat #202020;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+.portfolio-container-left p {
+    width: 80%;
+    font-family: "kepler-std-display", georgia, serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 3em;
+    line-height: 1em;
+    color: white;
+    font-style: italic;
+    font-weight: 300;
+    transition: all ease-in .1s;
+    -moz-transition: all ease-in .1s;
+    -webkit-transition: all ease-in .1s;
+    -o-transition: all ease-in .1s;
+}
+a, a:visited, a:hover {
+    color: #318ec3;
+    text-decoration: none;
+    outline: 0;
+    transition: color 0.4s ease;
+}
+
+a:hover {
+    color: #3a3a3a;
+}
+
+.button_primary a {
+    display: block;
+    width: 200px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    background-color: rgba(255, 255, 255, .25);
+    text-align: center;
+    text-decoration: none;
+    padding: .625em 3em .625em 3em;
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: .875em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 auto;
+    outline: 0;
+    transition: background-color 0.4s ease;
+}
+
+.button_primary a:hover {
+    background-color: rgba(255, 255, 255, .4);
+}
+
+.feature {
+    background: url("../images/treeBG.gif");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1330px;
+    margin: 0;
+    position: relative;
+}
+
+.ifpospwb {
+    opacity: 1;
+}
+
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.sideNav-index {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 50px;
+    width: 80%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.sideNav-index1 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-top: 50px;
+    height: 50px;
+    width: 80%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.flex-box1 {
+    text-align: center;
+    width: 9%;
+    height: 50px;
+    color: #275C7C;
+    font-family: 'Damion', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    padding-bottom: 0;
+
+}
+
+.flex-box {
+    text-align: center;
+    width: 9%;
+    height: 50px;
+    color: #7C273A;
+    font-family: 'Damion', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    padding-bottom: 0;
+
+}
+
+.box4 {
+    margin-left: 20px;
+}
+
+.headline,
+.error {
+
+    vertical-align: middle;
+    font-family: "ProximaNovaA-Extrabld", Arial, sans-serif;
+    font-size: 10em;
+    line-height: .9em;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    position: absolute; /* Break headline beyond L/R of edges of grid */
+    left: 0;
+    right: 0;
+    margin-top: 80px;
+}
+.headline-bottom {
+
+
+    width: 1140px;
+    font-family: "ProximaNovaA-Extrabld", Arial, sans-serif;
+    font-size: 5em;
+    color: #275C7C;
+    line-height: .9em;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-family: "ProximaNovaA-Extrabld", Arial, sans-serif;
+    font-size: 3.25em;
+    font-weight: normal;
+    line-height: 1.2em;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.who {
+    background: url("../images/geo1.gif");
+    background-size: cover;
+    background-attachment: scroll;
+    height: 600px;
+
+}
+
+.who .row {
+    height: 100%;
+
+}
+
+.who .eightcol {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.2em;
+    line-height: 2em;
+    font-weight: 300;
+
+}
+
+.who .eightcol1 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.2em;
+    line-height: 2em;
+    font-weight: 300;
+
+}
+
+.my-enviroment {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    height: 70px;
+    font-family: "ProximaNovaA-Extrabld", Arial, sans-serif;
+    font-size: 3em;
+    color: #275C7C;
+    line-height: .9em;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    z-index: 9999;
+
+}
+
+.about-me-flex {
+    width: 110px;
+    margin: 20px;
+    margin-right: 30px;
+
+}
+
+.who h2 {
+    color: #4646a4;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.how {
+    background: #0d0d0d url("../images/waterMountains.gif") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    height: 800px;
+}
+
+.how .inspire {
+    text-align: center;
+}
+
+.how h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.how h3 {
+    font-family: "Merriweather", Arial, serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+
+    color: #fff;
+}
+
+.how p {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: .875em;
+    text-align: center;
+    margin: .5em 6.75% .5em 6.75%;
+    color: rgba(255, 255, 255, .4);
+}
+
+.now {
+    background: #0d0d0d url("../images/bg_home.gif") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.now .row {
+    padding: 150px 0 145px 0;
+}
+.now h2 {
+    text-align: center;
+    color: #fff;
+}
+.now h3 {
+    font-family: "Merriweather", Arial, serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+    margin: 180px 0 20px 0;
+    color: #fff;
+}
+.now p {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: .875em;
+    text-align: center;
+    margin: .5em 6.75% ;
+    color: rgba(255, 255, 255, .4);
+}
+.work .row {
+    padding: 10px 0 0 0;
+}
+
+.work .project,
+.work .project1 {
+    padding: 15px 0 145px 0;
+    border-bottom: 1px dotted rgba(0, 0, 0, .15);
+}
+
+.work .project1 {
+    padding-top: 0;
+}
+
+.work .twelvecol {
+    text-align: center;
+}
+
+
+
+.work h2 {
+    text-align: center;
+    color: #999;
+}
+
+.work h3 {
+    font-family: "Merriweather", Arial, serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+    color: #333;
+}
+
+.work p {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: .875em;
+    text-align: center;
+    margin: .5em 13.45% .5em 13.45%;
+    color: #666;
+}
+
+.work img.hero {
+    width: 75%;
+}
+
+p.metadata {
+    text-align: center;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: .75em;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    color: #cbcbcb;
+    margin-bottom: 20px;
+}
+
+.contact {
+    background-color: #318ec3;
+}
+
+.contact .row {
+    padding: 240px 0 240px 0;
+
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.footer {
+    height: 100px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: .8125em;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 100px;
+    color: #333;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s ease;
+}
+
+.footer a:hover {
+    color: #318ec3;
+}
+h1 h2 p {
+    -webkit-font-smoothing: antialiased;
+}
+
+.about-main-container {
+    width: 100%;
+    height:100%;
+    background: black;
+}
+
+
+.noscroll {
+    overflow: hidden;
+}
+
+.grid-wrap {
+    margin: 10px auto 0;
+    max-width: 1090px;
+    width: 100%;
+    padding: 0;
+    -webkit-perspective: 1500px;
+    perspective: 1500px;
+}
+
+.grid {
+    position: relative;
+    -webkit-transition: all 0.5s cubic-bezier(0,0,0.25,1);
+    transition: all 0.5s cubic-bezier(0,0,0.25,1);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.view-full .grid {
+    -webkit-transform: translateZ(-1500px);
+    transform: translateZ(-1500px);
+}
+
+.grid figure,
+.grid .placeholder {
+    width: 340px;
+    height: 300px;
+}
+
+.grid figure {
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.grid figure.active {
+    opacity: 0;
+}
+
+.grid .placeholder {
+    pointer-events: none;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.placeholder > div {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.placeholder .front img {
+    width: 100%;
+    height: 100%;
+}
+
+.placeholder .back {
+    background: white;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.view-full .placeholder {
+    -webkit-transition: all 0.5s 0.1s cubic-bezier(0,0,0.25,1);
+    transition: all 0.5s 0.1s cubic-bezier(0,0,0.25,1);
+}
+
+.vertical .view-full .placeholder {
+    -webkit-transform: translateZ(1500px) rotateX(-179.9deg);
+    transform: translateZ(1500px) rotateX(-179.9deg); /* FF, Chrome, can we agree on one direction, pleeease? */
+}
+
+.horizontal .view-full .placeholder {
+    -webkit-transform: translateZ(1500px) rotateY(-179.9deg);
+    transform: translateZ(1500px) rotateY(-179.9deg);
+}
+
+.grid figure img {
+    display: block;
+    width: 100%;
+}
+
+.content,
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; /* Careful, does not work in IE < 11 http://caniuse.com/#search=pointer-events */
+}
+
+.content {
+    overflow-y: scroll;
+    height: 0; /* What seems to be the problem, officer? Well, we have a second scroll bar in Chrome! */
+    background: #fff;
+    visibility: hidden;
+    z-index: 400;
+    -webkit-overflow-scrolling: touch;
+}
+
+.loading {
+    opacity: 0;
+    z-index: 1;
+    background: transparent url(../img/preloader.gif) no-repeat center center;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.loading.show {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.content.show {
+    height: auto;
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.content > div {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    background: #fff;
+}
+
+.content > div.show {
+    height: auto;
+    opacity: 1;
+    -webkit-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+}
+
+.icon:before {
+    font-family: 'fontawesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.close-content {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 10px;
+    font-size: 1.6em;
+    color: #aaa;
+    cursor: pointer;
+    pointer-events: none;
+    padding: 1em;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+.close-content:hover {
+    color: #999;
+}
+
+.content > div.show ~ .close-content {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.close-content:before {
+    content: "\e602";
+}
+
+/* Dummy content */
+
+.dummy-img,
+.dummy-text {
+    max-width: 600px;
+    width: 90%;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.vertical .dummy-img,
+.vertical .dummy-text {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+}
+
+.horizontal .dummy-img,
+.horizontal .dummy-text {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+}
+
+.content > div.show .dummy-img,
+.content > div.show .dummy-text {
+    opacity: 1;
+}
+
+.vertical .content > div.show .dummy-img,
+.vertical .content > div.show .dummy-text {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.horizontal .content > div.show .dummy-img,
+.horizontal .content > div.show .dummy-text {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+p.dummy-text:nth-child(2) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+p.dummy-text:nth-child(3) {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.dummy-img {
+    height: 400px;
+    background-color: #ddd;
+    margin: 30px auto;
+}
+
+.dummy-text {
+    text-align: left;
+    margin: 0 auto;
+    padding: 10px 0;
+    color: #ddd;
+    font-size: 1em;
+    font-family: 'Blokk', Arial, serif;
+}
+
+.dummy-text:last-child {
+    padding-bottom: 100px;
+}
+
+/* Simple fallback */
+/* if any of these are not supported, a simple fallback will be shown */
+.no-pointerevents .content,
+.no-csstransforms3d .content,
+.no-csstransitions .content,
+.no-pointerevents .content > div,
+.no-csstransforms3d .content > div,
+.no-csstransitions .content > div,
+.no-pointerevents .close-content,
+.no-csstransforms3d .close-content,
+.no-csstransitions .close-content {
+    opacity: 1;
+    visibility: visible;
+    display: none;
+    height: auto;
+}
+
+.no-pointerevents .show .close-content,
+.no-csstransforms3d .show .close-content,
+.no-csstransition .show .close-content,
+.no-pointerevents div.show,
+.no-csstransforms3d div.show,
+.no-csstransitions div.show,
+.no-csstransitions .dummy-img,
+.no-csstransitions .dummy-text,
+.no-csstransforms3d .dummy-img,
+.no-csstransforms3d .dummy-text,
+.no-pointerevents .dummy-img,
+.no-pointerevents .dummy-text {
+    display: block !important;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .grid figure,
+    .grid .placeholder {
+        width: 240px;
+        height: 212px;
+    }
+
+}

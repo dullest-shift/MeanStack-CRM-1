@@ -15,15 +15,16 @@
 			})
 			.state('home', {
 			url : '/home',
-				templateUrl: 'app/views/pages/home.html',css: '../../assets/css/home.css'
+				abstract:true,
+				templateUrl: 'app/views/pages/home.html',css: '../../assets/css/landing.css'
 		})
-			.state('home.portfolio', {
+			.state('portfolio', {
 				url : '/portfolio',
-				templateUrl: 'app/views/pages/portfolio.html',css: '../../assets/css/home.css'
+				templateUrl: 'app/views/pages/portfolio.html',css: '../../assets/css/portfolio.css'
 			})
-			.state('home.about', {
+			.state('portfolio.about', {
 				url : '/about',
-				templateUrl: 'app/views/pages/about.html',css: '../../assets/css/home.css'
+				templateUrl: 'app/views/pages/about.html',css: '../../assets/css/portfolio.css'
 			})
 			.state('blog', {
 				url : '/blog',
