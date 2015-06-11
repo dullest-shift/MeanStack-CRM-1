@@ -24,8 +24,8 @@
 	height: 100%;
 	position: absolute;
 	visibility: hidden;
-	-webkit-perspective: 1500px;
-	perspective: 1500px;
+	-webkit-perspective: 1600px;
+	perspective: 1600px;
 }
 
 .no-js .slides > li {

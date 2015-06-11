@@ -36,17 +36,7 @@
     font-weight: 700;
     letter-spacing: .075em
 }
-.slide1-container {
+.slideshow{
     width:100%;
-    background: url("img/portfolio1BG.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.slide2-container {
-    width:100%;
-    background: url("img/portfolio2BG.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
 }
