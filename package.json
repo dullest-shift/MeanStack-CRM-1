@@ -1,34 +1,30 @@
 {
-  "name": "GoodDeeds",
-  "main": "server.js",
+  "name": "instagram-server",
+  "version": "0.0.0",
   "scripts": {
-    "watch": "watchify app.js -o public/js/bundle.js -v",
-    "browserify": "browserify app.js | uglifyjs > public/js/bundle.js",
-    "build": "npm run browserify ",
-    "start": "npm install"
+    "start": "node server/server.js"
   },
   "dependencies": {
-    "bcrypt-nodejs": "0.0.3",
-    "body-parser": "~1.9.3",
-    "dribbble-api": "0.0.3",
-    "express": "~4.10.3",
-    "express-handlebars": "~1.1.0",
-    "jsonwebtoken": "^1.2.0",
-    "mongoose": "~3.8.19",
-    "morgan": "~1.5.0",
-    "ng-twitter": "0.0.4",
-    "node-jsx": "~0.11.0",
-    "react": "~0.11.2",
-    "socket.io": "^1.1.0",
-    "twitter": "^1.2.0"
+    "bcryptjs": "^2.0.2",
+    "body-parser": "^1.8.1",
+    "compression": "^1.2.1",
+    "cors": "^2.4.2",
+    "express": "^4.9.0",
+    "jwt-simple": "^0.2.0",
+    "moment": "^2.8.3",
+    "mongoose": "^3.8.17",
+    "request": "^2.44.0"
   },
   "devDependencies": {
-    "browserify": "~6.0.3",
-    "nodemon": "^1.2.1",
-    "reactify": "~0.14.0",
-    "uglify-js": "~2.4.15",
-    "watchify": "^3.1.1"
-  },
-  "author": "Ben Callis",
-  "license": "MIT"
+    "gulp": "^3.8.10",
+    "gulp-angular-templatecache": "^1.4.2",
+    "gulp-complexity": "^0.3.0",
+    "gulp-concat": "^2.4.2",
+    "gulp-csso": "^0.2.9",
+    "gulp-filter": "^1.0.2",
+    "gulp-header": "^1.2.2",
+    "gulp-ng-annotate": "^0.4.1",
+    "gulp-recess": "^1.1.1",
+    "gulp-uglify": "^1.0.2"
+  }
 }
