@@ -4,20 +4,180 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
 @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 @import 'font-awesome/scss/font-awesome';
 
-/**
- * App-wide Styles
- */
+/*Variables*/
+
+$background: #9fbfbf;
+$navColor:#9AE0D6;
+$blue2:$background - 100;
+$margin: 25%;
+$footerFont: 20em;
+$header: #000;
+
+
+@mixin border-radius($radius: 20px) {
+        border-radius: $radius;
+}
+
+@mixin triangle($width,$dir,$color) {
+    @if $dir == up {
+        width: 0;
+        height: 0;
+        border-left: $width solid transparent;
+        border-right: $width solid transparent;
+        border-bottom: $width solid $color;
+    } @else if $dir == down {
+        width: 0;
+        height: 0;
+        border-left: $width solid transparent;
+        border-right: $width solid transparent;
+        border-top: $width solid $color;
+    }
+};
+@mixin circle($width,$color){
+    width:$width;
+    height:$width;
+    border-radius: $width/2;
+    background:$color;
+};
+
+
+/*FUNCTIONS FUNCTIONS FUNCTIONS FUNCTIONS FUNCTIONS*/
+
+//function that checks the background and contrast the text to the background
+@function text-contrast($background) {
+    @if lightness($background) < 50% {
+    }
+    @return lighten($background, 70% );
+}@else {
+@return darken($background,70%);
+}
+
+/*LOOPS LOOPS LOOPS LOOPS LOOPS LOOPS LOOPS LOOPS */
+
+//all classes with par- will have a right margin added
+@for $i from 1 through 4 {
+    .par-#{$i} {
+        margin-right: 20px * $i;
+    }
+}
+//for while loops you need to declare your index before the loop
+$i : 1;
+$parbg : black;
+
+@while $i < 5 {
+    .par-#{$i} {
+        margin-left: 100px *$i; background: $parbg; color:text-contrast($parbg);}
+    $parbg: lighten($parbg, 25%);//lighten paragraph bg by 25%
+    $i : $i + 1;
+}
+
+//for each to loop through icon images
+$icons:(twitter,facebook,youtube) {
+@each $social in list $icons {
+    .#{$social} {
+        background: url('../img/#{$social}.png') no-repeat;
+    }
+}
+
+}
+/*
+//for every p tag in the class change background
+@each $p in (
+one black,
+two black + 20,
+three black + 50,
+four black + 100
+) {
+    //passes the first class in list p,1 which is one and p,2 passes the second value which is black
+}
+    .#{nth($p,1)} {background:#{nth($p,2);} //if you wanted to add value to this you would need remove brackets and hash
+}
+*/
+
+@each $p in (
+        one black,
+        two black + 20,
+        three black + 50,
+        four white - 50
+) {
+    //passes the first class in list p,1 which is one and p,2 passes the second value which is black
+}
+.#{nth($p,1)} { background:nth($p,2);  color:text-contrast(nth($p,2));} // passing in the function to the nth color value
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//parent reference for the hover state
+.circle {
+    @include circle(100px, #999);
+    display: block;
+    background: $background;
+    &:hover{ background:black;}
+}
+.triangle {
+    @include triangle(200px,down,#888);
+    display: block;
+}
+.nav-on-main-page {
+    display: flex;
+    width:percentage(890px / 1440px); //Function that divids the width of my container by the total width of the combined elemnts
+    //If you want to round it round(percentage(890px / 1440px)); wrap the percentage in a round function
+    height:60px;
+    background:$navColor;
+    color:text-contrast(black , 100);
+    //call the text-contrast function and passes the arguments to it
+}
+.main-container {
+    //function that turns background into rgba
+    background:rbga(#333,0.5);
+}
+.footer {
+    padding:1%;
+    background: $background;
+
+    .footerHeader {
+        color:$header;
+        a{
+            font-size: $footerFont;
+        }
+    }
+}
+//the @extend will grab every style from footer and then adds a border
+.footer2 { @extend .footer; border: 2px solid black}
+
+
 
 .browsehappy {
-    margin: 0.2em 0;
+    margin: $margin;
     background: #ccc;
-    color: #000;
+    color:$background;
     padding: 0.2em 0;
+    @include border-radius(15px);//passing an argument to my border-radius mixin
 }
+
+
+
+
+
+
+
+
 
 // Component styles are injected through grunt
 // injector
-@import 'account/login/login.scss';
-@import 'admin/admin.scss';
+@import 'common/modal/modal.scss';
 @import 'main/main.scss';
 // endinjector
